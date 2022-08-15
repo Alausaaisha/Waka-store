@@ -1,4 +1,4 @@
-
+// import { Route, Switch, NavBar } from "react-router-dom";
 import './App.css';
 import Header from './Component/Header';
 import Main from './Component/Main';
@@ -24,13 +24,23 @@ function App() {
 
   return (
     <div className='App'>
-    <Header></Header>
-    <div className='row'>
+      <Header></Header>
+      <div className='row'>
       <Main onAdd={onAdd} products={products}></Main>
       <Basket onAdd={onAdd} cartItems={cartItems}></Basket>
       {/* <Main products={products}></Main>
       <Basket cartItems={cartItems}></Basket> */}
-    </div>
+      </div>
+      
+      {/* <NavBar/>
+      <Switch>
+        <Route exact path="/#">
+          <Header/>
+        </Route>
+        <Route path="/#/cart">
+          <Basket/>
+        </Route>
+      </Switch> */}
     
     </div>
   );

@@ -3,11 +3,11 @@ import React from "react";
 export default function Header (props) {
     return ( 
         <header className="row block center">
-            <div>
+            <nav>
                 <a href="#/">
                     <h1>Waka Shop</h1>
                 </a>
-            </div>
+            </nav>
             <div>
                 <a href="#/cart">
                      Cart
