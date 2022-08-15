@@ -28,6 +28,8 @@ function App() {
     <div className='row'>
       <Main onAdd={onAdd} products={products}></Main>
       <Basket onAdd={onAdd} cartItems={cartItems}></Basket>
+      {/* <Main products={products}></Main>
+      <Basket cartItems={cartItems}></Basket> */}
     </div>
     
     </div>
